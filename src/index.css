@@ -1,0 +1,410 @@
+
+*{
+  padding: 0;
+  margin: 0;;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*headers */
+h1,h2,h3{
+  font-family: "Raleway", sans-serif;
+}
+
+h1
+{
+  font-size: 60px;
+  padding-left: 62px;
+}
+
+h2
+{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 30px;
+
+}
+
+/*parahraph*/
+p , label{
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+}
+
+/*icons */
+.fa , fa-plus{
+  font-size: 30px;
+}
+
+
+/*tags*/
+
+.circle{
+  border-radius: 100%;
+  padding: 15px;
+}
+.work{
+  background-color: #d0cdfc;
+}
+
+.school{
+  background-color: #d5e7f7;
+}
+
+.entertainment{
+  background-color: #fbcdd0;
+}
+
+.family{
+  background-color: #ddf2db;
+}
+
+.label{
+  padding: 25px;
+}
+
+/*card*/
+.gap-6{
+  gap: 50px;
+}
+
+.size{
+  justify-content: space-between !important;
+    max-width: 20%;
+    width: 20%;
+    gap: 30px;
+}
+
+.card{
+  background-color: #fffade;
+}
+
+
+/*form*/
+
+form{
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  max-width: 50% !important;
+}
+
+.form-check-input:focus {
+  border-color: none;
+  outline: 0 !important;
+  box-shadow:none !important;
+}
+
+.form-control{
+  border: none;
+}
+
+.form-control:focus{
+  border: 0px;
+  outline: 0 !important;
+  box-shadow:none !important
+
+}
+
+.form-check-input:checked {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  font-size: 24px;
+ 
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: .25em;
+  font-size: 24px;
+  margin: 0 !important;
+}
+
+.form-check-input:focus {
+  border-color: #000000 !important;
+}
+
+
+select{
+  max-width: 80%;
+}
+
+.fa-solid, .fas {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.add-button{
+  font-size: 16px;
+}
+
+.bg-warning
+{
+  background-color: rgb(28, 32, 32) !important;
+   border: none !important;
+   color: white !important;
+}
+
+.wapper{
+  top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e5e5e5;
+    position: fixed;
+    z-index: 999;
+}
+
+/*menu*/
+.menu {
+  min-width: 30%;
+  background-color: #ffffff;
+  padding: 10px !important;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  border-radius: 10px;
+}
+
+.divider{
+  min-height: 2px;
+  background-color: #fffade;
+}
+
+.buttonHoverRed:hover{
+  color: white;
+  background-color: rgb(201, 5, 5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.buttonHoverGreen:hover{
+  color: white;
+  background-color: rgb(4, 65, 9);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.close{
+  margin-bottom: -15px;
+}
+
+.close i{
+   font-size: 16px;
+}
+
+
+/* responsive */
+
+/*1024*/
+@media screen and (max-width: 1024px)
+{
+
+  h1 
+  {
+    font-size: 40px;
+  }
+
+  .tags{
+    align-items:flex-start !important;
+    padding-left: 90px !important ;
+  }
+
+  .label 
+  {
+    padding: 20px !important;
+  }
+
+  .tag
+  {
+    gap:6px;
+  }
+
+  h3
+  {
+    font-size: 20px;
+  }
+
+  form{
+    min-width: 90%;
+  }
+}
+
+/*768px*/
+@media screen and (max-width: 768px)
+{
+  h1 
+  {
+    font-size: 40px;
+  }
+
+  .fa {
+    font-size: 20px;
+  }
+
+  .tags{
+    padding-left: 0 !important;
+    flex-flow: row !important;
+    justify-content: space-between;
+    padding-bottom: 40px !important;
+  }
+
+  .label 
+  {
+    padding: 20px !important;
+  }
+
+  .tag
+  {
+    gap:10px;
+    justify-content: space-around !important;
+  }
+
+  h3
+  {
+    font-size: 20px;
+  }
+
+  form{
+    min-width: 90%;
+  }
+
+  .cards{
+    min-width: 100%;
+  }
+}
+
+
+/*425px*/
+@media screen and (max-width: 425px)
+{
+  h1 
+  {
+    font-size: 16px;
+    padding: 0 !important;
+  }
+
+  .tags{
+    padding-left: 0 !important;
+    flex-flow: row !important;
+    gap: 5px;
+    padding-bottom: 40px !important;
+  }
+
+  .label 
+  {
+    padding: 16px !important;
+  }
+
+  .gap{
+    gap: 0px !important;
+  }
+
+  .contain{
+    padding: 0 !important;
+  }
+
+  .fa {
+    font-size: 18px;
+  }
+
+  .tag
+  {
+    gap:2px !important;
+    justify-content: space-around !important;
+  }
+
+  h3
+  {
+    font-size: 12px !important;
+    margin: 0;
+  }
+
+  form{
+    min-width: 90%;
+  }
+
+  .cards{
+    min-width: 100%;
+  }
+
+  label.form-check-label{
+    font-size: 14px !important;
+  }
+
+  input.form-check-input{
+    font-size: 16px !important;
+  }
+}
+
+
+/*375px*/
+@media screen and (max-width: 375px)
+{
+  h1 
+  {
+    font-size: 16px;
+    padding: 0 !important;
+  }
+
+  .tags{
+    padding-left: 0 !important;
+    flex-flow: row !important;
+    gap: 2px;
+    padding-bottom: 40px !important;
+  }
+
+  .label 
+  {
+    padding: 12px !important;
+  }
+
+  .gap{
+    gap: 0px !important;
+  }
+
+  .contain{
+    padding: 5px !important;
+  }
+
+  .tag
+  {
+    gap:2px !important;
+    justify-content: space-around !important;
+  }
+
+  h3
+  {
+    font-size: 10px !important;
+  }
+
+  form{
+    min-width: 90%;
+  }
+
+  .cards{
+    min-width: 100%;
+  }
+
+  label.form-check-label{
+    font-size: 12px !important;
+  }
+
+  input.form-check-input{
+    font-size: 14px !important;
+  }
+}
